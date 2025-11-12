@@ -22,7 +22,11 @@ print(1 < x < 20)         # True
 # Practice Problems:
 
 # Write an expression that checks if a number is between 50 and 100 (inclusive).
-
+number = int(input("Give me a random number"))
+if number >=50 and number<=100:
+    print("The number is between 50 and 100")
+else:
+    print("Number is not between 50 to 100")
 # Write an expression that checks if a number is NOT equal to 0 and greater than 10.
 
 # Use chained comparison to check if 3 < 4 < 5.
