@@ -60,34 +60,88 @@ print(mylist)
 # .remove() - removes the first occurrence of a specific value
 #  .sort() - sorts the list in ascending order
 # .reverse() - reverses the odrder of the list
+# Why is a list more important than a variable?
+###########################################################
+# A list can hold multiple variables ,
+# while a variable can only hold one value at a time
+cakes = ['choclate', 'vanillia', 'red velvet', 'carrot']
+print(cakes)
+# access the first item
+print(cakes[0]) #choclate
+# access the last item
+print(cakes[-1]) #carrot
+#want to choclate instead of vanillia
+cakes[0]= 'strabbery'
+print(cakes) # straberry, vanillia, red velvet, carrot, lemon
+#remove the last cake
+cakes.pop()
+print(cakes) #['strabery', 'choclate', 'red velvet']
+# insert a new cake at index 2
+cakes.insert(2, 'funfetti')
+print(cakes)
 
- # Examples:
 
-# my_list = ['apple', 'banana', 'cherry']
-# print(my_list[0])         # apple
-# print(my_list[1:])        # ['banana', 'cherry']
+#Examples:
 
-# my_list.append('grape')
-# print(my_list)
+my_list = ['apple', 'banana', 'cherry']
+print(my_list[0])         # apple
+print(my_list[1:])        # ['banana', 'cherry']
 
-# my_list.pop(1)
-# print(my_list)
+my_list.append('grape')
+print(my_list)
 
-# numbers = [3, 1, 4, 2]
-# numbers.sort()
-# print(numbers)
+my_list.pop(1)
+print(my_list)
+
+numbers = [3, 1, 4, 2]
+numbers.sort()
+print(numbers)
 
 
-# # Practice Problems:
+# Practice Problems:
 
-# # Create a list with 5 of your favorite foods.
+# Create a list with 5 of your favorite foods.
+foodslist = ['Quesabirrias', 'Chicken Alfredo', 'Vanillia Ice-Cream', 'Pizza', 'Chipotle']
+print(foodslist)
+# Print the second and last item.
+print(foodslist())
+# Add a new item using .append().
 
-# # Print the second and last item.
+# Remove the first item using .pop(0).
 
-# # Add a new item using .append().
+# Reverse your list using .reverse().
 
-# # Remove the first item using .pop(0).
+# Create a list of 3 lists (matrix), and access the middle element.
 
-# # Reverse your list using .reverse().
 
-# # Create a list of 3 lists (matrix), and access the middle element.
+#sets = {1, 2, 3}
+# sets are unorders collections of unique items
+# sets do not support indexing or slicing
+# sets are mutable, meaning you can asdd or remove items
+# sets are created using curely brakes{}
+# Do sets not allow duplicates items? No, sets do not allow duplicates items
+my_set = {1, 2, 3, 4, 5}
+print(my_set) #{1, 2, 3, 4, 5}
+print(type(my_set)) # <class 'set'>
+# add an item to the set 
+
+
+
+
+
+
+
+
+
+
+
+
+# tuples are ordered collections of tiems
+# tuples are inmutable, meaning you cannot modify them after creation
+# tuples are created using parethesis()
+my_tuple = (1, 2, 3, 4, 5)
+print(my_tuple) #(1, 2, 3, 4, 5)
+print(type(my_tuple)) # <class 'tuple'>
+print(my_tuple[0]) # 1
+print(my_tuple[1:4]) # ()
+#try to modify the tuple (will raise an error)
