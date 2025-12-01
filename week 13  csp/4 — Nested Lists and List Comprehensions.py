@@ -1,36 +1,36 @@
 # Objective:
 # Students will manipulate nested lists and understand basic list comprehensions.
 
-fruits = ["apple", "orange", "banana", "coconut"] 
-vegstables = ["celery", "carrots", "potatoes"] 
-meats = ["chicken", "fish", "banana"] 
+# fruits = ["apple", "orange", "banana", "coconut"],
+# vegstables = ["celery", "carrots", "potatoes"],
+# meats = ["chicken", "fish", "banana"] 
 
 
-groceries = [fruits, vegstables, meats] # This means that fruits is  vegstables is number 2 and meats is number 2
+# groceries = [fruits, vegstables, meats] # This means that fruits is  vegstables is number 2 and meats is number 2
 
-print(groceries[0][0]) 
-print(groceries[2][0])
+# print(groceries[0][0]) 
+# print(groceries[2][0])
 
-groceries = [["apple", "orange", "banana", "coconut"] 
-             ["celery", "carrots", "potatoes"] 
-             ["chicken", "fish", "banana"] ]
-
-
-for collection in groceries: 
-    for food in collection:
-        print(food)
+# groceriess = [ ["apple", "orange", "banana", "coconut"],
+#              ["celery", "carrots", "potatoes"],
+#              ["chicken", "fish", "banana"] ]
 
 
+# for collection in groceriess: 
+#     for food in collection:
+#         print(food)
 
-num_pad = ((1, 2, 3)
-           (4, 5, 6)
-           (7, 8, 9)
-           ("*", 0, "#"))
 
-for row in num_pad:
-    for num in row:
-        print(num, end= " ")
-    print()
+
+# num_pad = ((1, 2, 3),
+#            (4, 5, 6),
+#            (7, 8, 9),
+#            ("*", 0, "#"))
+
+# for row in num_pad:
+#     for num in row:
+#         print(num, end= " ")
+#     print()
 
 
 
@@ -52,17 +52,17 @@ for row in num_pad:
 
 # Examples:
 
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
+# matrix = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
 
-print(matrix[1][2])    # 6
+# print(matrix[1][2])    # 6
 
-# List comprehension
-first_col = [row[0] for row in matrix]
-print(first_col)       # [1, 4, 7]
+# # List comprehension
+# first_col = [row[0] for row in matrix]
+# print(first_col)       # [1, 4, 7]
 
 
 
@@ -70,10 +70,19 @@ print(first_col)       # [1, 4, 7]
 
 # Build a matrix variable containing 3 lists of 3 numbers each.
 
+colors = [["red", "orange", "yellow"],
+        ["green", "blue", "purple"],
+        ["pink", "black", "white"]]
+
 # Print the first list.
-
+print(colors[0])
 # Print the second item from the third list.
-
+print(colors[2][1])
 # Use a list comprehension to extract the last item from each sub-list.
-
+final = [row[-1] for row in colors]
+print(final)
 # Challenge: Create a new list containing squares of numbers from 1–10 using a comprehension.
+
+squares = [x**2 for x in range(1, 11)]
+for x in range(1, 11):
+    print(x**2)
