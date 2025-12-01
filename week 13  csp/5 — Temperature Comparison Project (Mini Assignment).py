@@ -12,3 +12,14 @@
 
 # Starter Code:
 
+weather = int(input("What is the weather today?"))
+if weather <= -10:
+    print("Extreme weather warning")
+if weather <=65:
+    print("Its is cold outside today")
+if weather <65 and weather >=80:
+    print("Its is warm today")
+if weather >80 and weather <=110:
+    print("Today is really hot")
+if weather  >110:
+    print("extreme weather warning")
