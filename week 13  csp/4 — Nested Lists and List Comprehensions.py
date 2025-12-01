@@ -1,6 +1,40 @@
 # Objective:
 # Students will manipulate nested lists and understand basic list comprehensions.
 
+fruits = ["apple", "orange", "banana", "coconut"] 
+vegstables = ["celery", "carrots", "potatoes"] 
+meats = ["chicken", "fish", "banana"] 
+
+
+groceries = [fruits, vegstables, meats] # This means that fruits is  vegstables is number 2 and meats is number 2
+
+print(groceries[0][0]) 
+print(groceries[2][0])
+
+groceries = [["apple", "orange", "banana", "coconut"] 
+             ["celery", "carrots", "potatoes"] 
+             ["chicken", "fish", "banana"] ]
+
+
+for collection in groceries: 
+    for food in collection:
+        print(food)
+
+
+
+num_pad = ((1, 2, 3)
+           (4, 5, 6)
+           (7, 8, 9)
+           ("*", 0, "#"))
+
+for row in num_pad:
+    for num in row:
+        print(num, end= " ")
+    print()
+
+
+
+
 # Key Notes:
 
 # A list can contain other lists.
